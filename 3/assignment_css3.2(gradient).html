@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>css3</title>
+    <style type="text/css">
+
+
+
+
+        div{
+            width:200px;
+            height:200px;
+            background-color:red;
+            margin:25px;
+            position: relative;
+    transition: transform 2s,width 2s,height 2s;        
+    
+        }
+        #div1:hover{
+            transform:rotate(180deg);
+            width:300px;
+            height:300px;
+            
+            background: repeating-radial-gradient(red, blue 10%, green 15%);
+        }
+
+        #div2:hover{
+            transform:rotate(180deg);
+            width:300px;
+            height:300px;
+            
+            background: repeating-linear-gradient(red, blue 10%, green 15%);
+        }
+
+    </style>
+</head>
+<body>
+Bring cursor over the blocks to see the result.
+<h3>RADIAL GRADIENT</h3>
+<div id="div1">
+</div>
+<h3>LINEAR GRADIENT</h3>
+<div id="div2"></div>
+</body>
+</html>
